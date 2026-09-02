@@ -30,6 +30,15 @@ function AppNavbar() {
             <li className="nav-item">
               <NavLink className="nav-link" to="/" end>Home</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/about">About Us</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/services">Services</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
+            </li>
 
             {token ? (
               <>
