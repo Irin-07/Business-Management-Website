@@ -36,12 +36,9 @@ function AppNavbar() {
                 </li>
               </>
             ) : (
-              <>
-                <li className="nav-item"><NavLink className="nav-link" to="/login">Login</NavLink></li>
-                <li className="nav-item mt-2 mt-lg-0">
-                  <Link className="btn btn-gradient btn-sm w-100" to="/register">Register/Login</Link>
-                </li>
-              </>
+              <li className="nav-item mt-2 mt-lg-0">
+                <Link className="btn btn-gradient btn-sm w-100" to="/login">Login / Register</Link>
+              </li>
             )}
           </ul>
         </div>
