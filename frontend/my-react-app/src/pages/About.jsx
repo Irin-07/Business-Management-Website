@@ -10,7 +10,7 @@ function About() {
       </div>
 
       <div className="row g-4 align-items-center mb-5">
-        <div className="col-lg-6">
+        <div className="col-lg-12">
           <h2 className="fw-bold">Our Story</h2>
           <p className="text-secondary">
             BizManager was built to help small and medium businesses simplify
@@ -18,28 +18,6 @@ function About() {
             We combine simplicity with powerful tools so you can focus on what
             matters most — your business.
           </p>
-        </div>
-        <div className="col-lg-6">
-          <div className="surface-card p-4">
-            <div className="row g-3 text-center">
-              <div className="col-6">
-                <h3 className="fw-bold text-primary mb-0">500+</h3>
-                <small className="text-secondary">Businesses Served</small>
-              </div>
-              <div className="col-6">
-                <h3 className="fw-bold text-primary mb-0">10k+</h3>
-                <small className="text-secondary">Customers Managed</small>
-              </div>
-              <div className="col-6">
-                <h3 className="fw-bold text-primary mb-0">99.9%</h3>
-                <small className="text-secondary">Uptime</small>
-              </div>
-              <div className="col-6">
-                <h3 className="fw-bold text-primary mb-0">24/7</h3>
-                <small className="text-secondary">Support</small>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

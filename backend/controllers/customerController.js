@@ -66,6 +66,45 @@ async function getCustomer(req, res, next) {
     next(error);
   }
 }
+async function getCustomerStatus(req, res, next) {
+  try {
+    const stats = await Customer.aggregate([
+      { $match: { user: req.user._id } },
+      { $group: { _id: "$status", count: { $sum: 1 } } }
+    ]);
+
+    const result = { total: 0, Active: 0, Pending: 0, Completed: 0 };
+    stats.forEach((s) => {
+      result[s._id] = s.count;
+      result.total += s.count;
+    });
+
+    res.json({ success: true, stats: result });
+  } catch (error) {
+    next(error);
+  }
+}
+async function getRecentActivity(req, res, next) {
+  try {
+    const recent = await Customer.find({ user: req.user._id })
+      .sort({ updatedAt: -1 })
+      .limit(8)
+      .select("name status createdAt updatedAt");
+
+    const activity = recent.map((c) => ({
+      _id: c._id,
+      name: c.name,
+      status: c.status,
+      type: c.createdAt.getTime() === c.updatedAt.getTime() ? "created" : "updated",
+      timestamp: c.updatedAt
+    }));
+
+    res.json({ success: true, activity });
+  } catch (error) {
+    next(error);
+  }
+}
+
 
 async function updateCustomer(req, res, next) {
   try {
@@ -99,4 +138,4 @@ async function deleteCustomer(req, res, next) {
   }
 }
 
-module.exports = { createCustomer, listCustomers, getCustomer, updateCustomer, deleteCustomer };
+module.exports = { createCustomer, listCustomers, getCustomer,getCustomerStatus,getRecentActivity, updateCustomer, deleteCustomer };

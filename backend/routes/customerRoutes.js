@@ -5,10 +5,14 @@ const {
   listCustomers,
   getCustomer,
   updateCustomer,
-  deleteCustomer
+  deleteCustomer,
+  getCustomerStatus,
+  getRecentActivity
 } = require("../controllers/customerController");
 
 router.use(protect);
+router.get("/status", getCustomerStatus);
+router.get("/recent-activity", getRecentActivity);
 router.route("/").get(listCustomers).post(createCustomer);
 router.route("/:id").get(getCustomer).put(updateCustomer).delete(deleteCustomer);
 

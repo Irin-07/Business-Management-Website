@@ -65,7 +65,7 @@ function Home() {
               <p className="lead text-secondary my-4">
                 A modern full-stack platform with secure authentication, customer management and real-time API integration.
               </p>
-              <Link to="/register" className="btn btn-primary btn-lg me-2">Get Started</Link>
+              <Link to="/register" className="btn btn-primary btn-lg me-2">Register/Login</Link>
               <Link to="/about" className="btn btn-outline-dark btn-lg">Learn More</Link>
             </div>
             <div className="col-lg-5 mt-4">
