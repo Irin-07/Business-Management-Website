@@ -49,7 +49,7 @@ async function login(req, res, next) {
     const user = await User.findOne({ email: email.toLowerCase() });
     if (!user || !(await bcrypt.compare(password, user.password))) {
       return res.status(401).json({ success: false, message: "Invalid email or password" });
-    }
+    }bn
 
     res.json({
       success: true,
