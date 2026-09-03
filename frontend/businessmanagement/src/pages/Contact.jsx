@@ -29,21 +29,21 @@ function Contact() {
               <i className="bi bi-geo-alt-fill text-primary fs-4 me-3"></i>
               <div>
                 <h6 className="fw-bold mb-1">Address</h6>
-                <p className="text-secondary mb-0">Chennai, Tamil Nadu, India</p>
+                <p className="text-secondary mb-0">Tirunelveli, Tamil Nadu, India</p>
               </div>
             </div>
             <div className="d-flex align-items-start mb-4">
               <i className="bi bi-envelope-fill text-primary fs-4 me-3"></i>
               <div>
                 <h6 className="fw-bold mb-1">Email</h6>
-                <p className="text-secondary mb-0">support@bizmanager.com</p>
+                <p className="text-secondary mb-0">bizmanager@gmail.com</p>
               </div>
             </div>
             <div className="d-flex align-items-start">
               <i className="bi bi-telephone-fill text-primary fs-4 me-3"></i>
               <div>
                 <h6 className="fw-bold mb-1">Phone</h6>
-                <p className="text-secondary mb-0">+91 98765 43210</p>
+                <p className="text-secondary mb-0">+91 98534 23786</p>
               </div>
             </div>
           </div>
