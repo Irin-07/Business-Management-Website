@@ -16,7 +16,15 @@ function AppNavbar() {
           <i className="bi bi-briefcase-fill me-2"></i>BizManager
         </Link>
 
-        <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+             <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
 
