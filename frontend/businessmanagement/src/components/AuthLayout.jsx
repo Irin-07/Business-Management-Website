@@ -25,7 +25,7 @@ function AuthLayout({ tab, children }) {
 
         .auth-card {
           width: 100%; max-width: 900px; min-height: 500px; border-radius: 22px;
-          border: 2px solid #0D6EFD;
+          border: 2px solid #00BCD4;
           -webkit-box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.12), 0 0 60px rgba(37, 99, 235, 0.28), 0 24px 80px rgba(0,0,0,0.5);
           display: flex; overflow: visible; position: relative;
         }
@@ -38,7 +38,7 @@ function AuthLayout({ tab, children }) {
 
         .purple-panel {
           position: absolute; top: 0; bottom: 0; width: 42%;
-          background: linear-gradient(155deg, #0D6EFD, #0D6EFD 60%, #0D6EFD 100%);
+          background: linear-gradient(155deg, #00BCD4, #00BCD4 60%, #00BCD4 100%);
           display: flex; flex-direction: column; justify-content: center;
           padding: 48px 40px; color: #FFFFFF; z-index: 10; border-radius: 18px;
           align-items: center; text-align: center;
@@ -46,10 +46,10 @@ function AuthLayout({ tab, children }) {
 
         .purple-btn {
           width: 100%; padding: 13px 0;
-          background: linear-gradient(90deg, #0D6EFD, #0D6EFD);
+          background: linear-gradient(90deg, #00BCD4, #00BCD4);
           border: none; border-radius: 50px; color: #FFFFFF; font-size: 15px; font-weight: 700;
           cursor: pointer; font-family: inherit; display: flex; align-items: center;
-          justify-content: center; gap: 8px; box-shadow: 0 4px 22px #0D6EFD;
+          justify-content: center; gap: 8px; box-shadow: 0 4px 22px #00BCD4;
           margin-top: 8px; transition: opacity .2s;
         }
         .purple-btn:disabled { opacity: 0.55; cursor: not-allowed; }
@@ -61,7 +61,7 @@ function AuthLayout({ tab, children }) {
           display: inline-block;
         }
 
-        .link-btn { background: none; border: none; color: #0D6EFD; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 13px; }
+        .link-btn { background: none; border: none; color: #00BCD4; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 13px; }
 
         @media (max-width: 640px) {
           .auth-card { flex-direction: column; min-height: unset; overflow: hidden !important; border-radius: 22px !important; }

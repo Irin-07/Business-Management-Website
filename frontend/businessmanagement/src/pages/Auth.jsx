@@ -99,7 +99,7 @@ export default function Auth({ initialTab = "login" }) {
 
 .auth-card {
   width: 100%; max-width: 680px; min-height: 380px; border-radius: 22px;
-          border: 2px solid #0D6EFD;
+          border: 2px solid #00BCD4;
           box-shadow: 0 0 0 1px rgba(37,99,235,0.12), 0 0 60px rgba(37,99,235,0.28), 0 24px 80px rgba(0,0,0,0.5);
           display: flex; overflow: visible; position: relative; perspective: 1200px;
         }
@@ -137,7 +137,7 @@ export default function Auth({ initialTab = "login" }) {
           width: 15px; height: 15px; border: 2px solid rgba(255,255,255,0.2);
           border-top-color: #FFFFFF; border-radius: 50%; animation: spin .8s linear infinite; display: inline-block;
         }
-        .link-btn { background: none; border: none; color: #0D6EFD; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 13px; }
+        .link-btn { background: none; border: none; color: #00BCD4; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 13px; }
 
         @media (max-width: 640px) {
           .auth-card { flex-direction: column; min-height: unset; overflow: hidden !important; border-radius: 22px !important; }
