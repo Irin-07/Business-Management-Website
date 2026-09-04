@@ -1,8 +1,8 @@
 :root {
-  --primary: #00bcd4;
-  --primary-dark: #4338ca;
-  --primary-light: #eef2ff;
-  --accent: #06b6d4;
+  --primary: #00BCD4;
+  --primary-dark: #00838F;
+  --primary-light: #E0F7FA;
+  --accent: #00BCD4;
   --success: #16a34a;
   --warning: #d97706;
   --danger: #dc2626;
@@ -88,7 +88,7 @@ a { text-decoration: none; }
   font-weight: 600;
   border-radius: 12px;
 }
-.btn-soft:hover { background: #e0e4ff; color: var(--primary-dark); }
+.btn-soft:hover { background: #e0f7fa; color: var(--primary-dark); }
 
 /* ---------- Cards ---------- */
 .surface-card {
@@ -137,7 +137,7 @@ a { text-decoration: none; }
 }
 .table-modern td, .table-modern th { vertical-align: middle; padding: 0.9rem 1rem; }
 .table-modern tbody tr { border-bottom: 1px solid var(--border); }
-.table-modern tbody tr:hover { background: #fafbff; }
+.table-modern tbody tr:hover { background: #e0f7fa; }
 
 .badge-status {
   padding: 0.35em 0.75em;
@@ -147,7 +147,7 @@ a { text-decoration: none; }
 }
 .badge-active { background: #dcfce7; color: var(--success); }
 .badge-pending { background: #fef3c7; color: var(--warning); }
-.badge-completed { background: #dbeafe; color: #1d4ed8; }
+.badge-completed { background: #e0f7fa; color: #00838f; }
 
 /* ---------- Responsive helpers ---------- */
 @media (max-width: 767.98px) {
@@ -183,4 +183,51 @@ a { text-decoration: none; }
 @media (max-width: 575.98px) {
   .container, .container-fluid { padding-left: 1rem; padding-right: 1rem; }
   .stat-card h3 { font-size: 1.4rem; }
+}
+:root {
+  --bs-primary: #00BCD4 !important;
+  --bs-primary-rgb: 0, 188, 212 !important;
+}
+
+.text-primary {
+  color: #00BCD4 !important;
+}
+
+.bg-primary {
+  background-color: #00BCD4 !important;
+}
+
+.border-primary {
+  border-color: #00BCD4 !important;
+}
+
+.btn-primary {
+  background-color: #00BCD4 !important;
+  border-color: #00BCD4 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #00838F !important;
+  border-color: #00838F !important;
+}
+
+.btn-outline-primary {
+  color: #00BCD4 !important;
+  border-color: #00BCD4 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00BCD4 !important;
+  border-color: #00BCD4 !important;
+  color: #fff !important;
+}
+
+a {
+  color: #00BCD4;
+}
+
+a:hover {
+  color: #00838F;
 }

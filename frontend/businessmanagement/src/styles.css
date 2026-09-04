@@ -1,6 +1,6 @@
 body { background: #f6f8fb; color: #182230; }
 .navbar { min-height: 70px; }
-.hero-section { background: linear-gradient(135deg, #eef5ff, #ffffff); }
+.hero-section { background: linear-gradient(135deg, #e0f7fa, #ffffff); }
 .min-vh-75 { min-height: 70vh; }
 .hero-card, .feature-card, .dashboard-preview, .stat-card, .auth-card {
   background: white; border-radius: 20px;
@@ -14,7 +14,7 @@ body { background: #f6f8fb; color: #182230; }
 .stat-card { padding: 22px; border: 1px solid #e8edf5; }
 .stat-card small { display: block; color: #6c757d; margin-top: 10px; }
 .stat-card h2 { margin: 3px 0 0; }
-.auth-bg { min-height: calc(100vh - 70px); display: grid; place-items: center; padding: 30px; background: linear-gradient(135deg,#edf4ff,#f8fbff); }
+.auth-bg { min-height: calc(100vh - 70px); display: grid; place-items: center; padding: 30px; background: linear-gradient(135deg,#E0F7FA,#f8fbff); }
 .auth-card { width: 100%; max-width: 440px; padding: 34px; }
 .form-control, .form-select { min-height: 44px; }
 @media (max-width: 900px) {

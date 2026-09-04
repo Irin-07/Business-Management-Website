@@ -112,7 +112,7 @@ export default function Auth({ initialTab = "login" }) {
 
 .purple-panel {
   position: absolute; top: 0; bottom: 0; width: 42%;
-  background: linear-gradient(155deg, #2563EB, #2563EB 60%, #2563EB 100%);
+  background: linear-gradient(155deg, #00BCD4, #00BCD4 60%, #00BCD4 100%);
   display: flex; flex-direction: column; justify-content: center;
   padding: 24px 40px; color: #FFFFFF; z-index: 10; border-radius: 18px;
           transform-style: preserve-3d; transform-origin: center center;
@@ -124,10 +124,10 @@ export default function Auth({ initialTab = "login" }) {
 
              .purple-btn {
           width: 100%; padding: 10px 0;
-          background: linear-gradient(90deg, #2563EB, #2563EB);
+          background: linear-gradient(90deg, #00BCD4, #00BCD4);
           border: none; border-radius: 50px; color: #FFFFFF; font-size: 15px; font-weight: 700;
           cursor: pointer; font-family: inherit; display: flex; align-items: center;
-          justify-content: center; gap: 8px; box-shadow: 0 4px 22px #2563EB;
+          justify-content: center; gap: 8px; box-shadow: 0 4px 22px #00BCD4;
           margin-top: 20px; transition: opacity .2s;
         }
         .purple-btn:disabled { opacity: 0.55; cursor: not-allowed; }
